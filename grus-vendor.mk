@@ -1414,4 +1414,5 @@ PRODUCT_PACKAGES += \
     liblbs_core \
     libqmi_cci \
     libqsocket \
-    libqmi_common_so
+    libqmi_common_so \
+    vendor.qti.hardware.capabilityconfigstore@1.0 \
