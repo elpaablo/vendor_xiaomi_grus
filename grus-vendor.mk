@@ -319,6 +319,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/grus/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/grus/proprietary/vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin \
     vendor/xiaomi/grus/proprietary/vendor/etc/camera/visidon_clearshot_params_algoup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/visidon_clearshot_params_algoup.xml \
+    vendor/xiaomi/grus/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/grus/proprietary/vendor/etc/cirrus.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/cirrus.cfg \
     vendor/xiaomi/grus/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/xiaomi/grus/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -402,6 +403,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/grus/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/xiaomi/grus/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/xiaomi/grus/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/xiaomi/grus/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
+    vendor/xiaomi/grus/proprietary/vendor/etc/permissions/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
+    vendor/xiaomi/grus/proprietary/vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.verson-1_1.xml \
     vendor/xiaomi/grus/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/xiaomi/grus/proprietary/vendor/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml \
     vendor/xiaomi/grus/proprietary/vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml \
@@ -1388,8 +1392,31 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/grus/proprietary/vendor/lib64/libhvx_proxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhvx_proxy_stub.so \
     vendor/xiaomi/grus/proprietary/product/lib64/libsketchology_native.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/libsketchology_native.so \
     vendor/xiaomi/grus/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
-    vendor/xiaomi/grus/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so 
+    vendor/xiaomi/grus/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
+    vendor/xiaomi/grus/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
+    vendor/xiaomi/grus/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpvr.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5so \
+    vendor/xiaomi/grus/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVkLayer_q3dtools.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.3.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.4.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.5.so \
+    vendor/xiaomi/grus/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
 
+    
 PRODUCT_PACKAGES += \
     libMpeg4SwEncoder \
     libsdm-disp-vndapis \
