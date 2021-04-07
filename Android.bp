@@ -62,7 +62,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: [
-				"proprietary/bin/wfdservice",
+				"proprietary/system_ext/bin/wfdservice",
 			]
 		}
 	},
@@ -273,7 +273,7 @@ android_app_import {
 android_app_import {
 	name: "WfdService",
 	owner: "xiaomi",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
