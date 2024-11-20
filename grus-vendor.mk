@@ -256,15 +256,21 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
     vulkan.adreno \
+    libAlacSwDec \
+    libApeSwDec \
     libC2D2 \
     libCB \
+    libFlacSwDec \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libMpeg4SwEncoder \
     libOmxAacDec \
     libOmxAlacDec \
+    libOmxAlacDecSw \
     libOmxAmrDec \
     libOmxAmrwbplusDec \
     libOmxApeDec \
+    libOmxApeDecSw \
     libOmxEvrcDec \
     libOmxG711Dec \
     libOmxQcelp13Dec \
@@ -329,6 +335,7 @@ PRODUCT_PACKAGES += \
     libsnsapi \
     libssc \
     libssd \
+    libswvdec \
     libsysmon_cdsp_skel \
     libthermalclient \
     libtime_genoff \
@@ -341,11 +348,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
     vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
     btaudio_offload_if \
     com.qti.sensor.imx586_grus \
     com.qti.sensor.ov8856 \
@@ -524,11 +529,12 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
     android.hardware.secure_element@1.0-impl \
-    fingerprint.goodix_fod.default \
+    fingerprint.goodix_fod.sdm710 \
     vendor.qti.esepowermanager@1.0-impl \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
+    vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
@@ -684,6 +690,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.iwlan@1.0 \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \
     vendor.qti.hardware.qccvndhal@1.0 \
@@ -716,6 +723,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
+    vendor.qti.hardware.vpp@1.2 \
     vendor.qti.ims.callcapability@1.0_vendor \
     vendor.qti.ims.callinfo@1.0_vendor \
     vendor.qti.ims.factory@1.0_vendor \
@@ -726,7 +734,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0-service-Impl \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
-    vendor.xiaomi.hardware.mfidoca@1.0 \
     capi_v2_aptX_Classic \
     capi_v2_aptX_HD \
     capi_v2_cirrus_sp \
@@ -780,6 +787,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.0 \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
+    fm_helium \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -789,11 +797,13 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
+    libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
     libwfdnative \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
     vendor.qti.hardware.radio.ims@1.1 \
@@ -803,6 +813,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.rcsconfig@1.0 \
     vendor.qti.imsrtpservice@3.0 \
+    vendor.xiaomi.hardware.mfidoca@1.0 \
     CACertService \
     CneApp \
     IWlanService \
@@ -893,3 +904,13 @@ PRODUCT_PACKAGES += \
     xtwifi-inet-agent \
     dpmd \
     wfdservice
+
+PRODUCT_PACKAGES += \
+    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    vendor_lib_libEGL_adreno_so \
+    vendor_lib_libGLESv2_adreno_so \
+    vendor_lib_libq3dtools_adreno_so \
+    vendor_lib64_libEGL_adreno_so \
+    vendor_lib64_libGLESv2_adreno_so \
+    vendor_lib64_libq3dtools_adreno_so
